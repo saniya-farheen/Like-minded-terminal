@@ -1,0 +1,76 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image:rgb(190, 200, 200);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure the body covers the full viewport height */
+}
+.wrapper {
+  background-color: rgba(255, 255, 255, 0.8); /* Set a semi-transparent background color */
+  width: 100%; /* Expand to full width */
+  padding: 20px; /* Add padding to the wrapper */
+  box-sizing: border-box; /* Ensure padding doesn't affect the width */
+}
+.container {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 3%;
+  margin-left: 24%;
+  border: 1px solid #0c0d0d; /* Add border properties here */
+  border-radius: 0.25rem; /* Set border radius */
+  background-color: transparent; /* Set background color to transparent */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  padding: 10px; /* Increase padding for a larger input box */
+  margin: 3px 0; /* Adjust margin */
+  outline: none;
+  font-size: 16px;
+  width: calc(100% - 20px); /* Calculate width with extra space */
+  box-sizing: border-box;
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border radius */
+  background-color: rgba(255, 255, 255, 0.8); /* Set background color to transparent with opacity */
+}
+.btn {
+  margin-right: 10px;
+  background-color: #3d5ec3; /* Change button background color */
+  color: #fff; /* Change button text color */
+  padding: 10px 20px; /* Adjust button padding */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Add button border radius */
+  font-size: 16px; /* Adjust button font size */
+}
+
+.expandable {
+  height: 100px; /* Set initial height */
+  resize: vertical; /* Allow vertical resizing */
+  resize: horizontal;
+}
+
+.outline-box {
+  border: 1px solid #0c0d0d; /* Set border color */
+  border-radius: 0.25rem; /* Set border radius */
+}
+
+.button-group {
+  margin-top: 20px; /* Adjust spacing between form and buttons */
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 20%;
+    height: 130%;
+  }
+}
